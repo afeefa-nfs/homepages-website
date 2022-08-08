@@ -1,0 +1,151 @@
+body{
+	padding: 5px 5px 5px 5px;
+	margin: 0px 10px;
+	background-color:rgb(253, 247, 181);
+}
+.new
+{
+	color:rgb(31, 31, 168);
+	padding:5px;
+}
+.addpadding
+{
+	padding:0px 10px 10px 10px;
+}
+.class3
+{
+	background:rgb(243, 211, 105);
+}
+.borders{
+	border: 1px solid #CCA383;
+	background:rgb(243, 211, 105);
+	border-radius: 5px;
+	padding:5px;
+}
+.border1
+{
+	border: 3px solid rgb(243, 211, 105);
+	box-shadow: 10px 10px 5px rgb(243, 211, 105);
+	border-radius: 5px;
+}
+fieldset {
+	border: 1px solid #CCA383;
+	width: 60%;
+	background:rgb(250, 245, 186);
+	padding: 15px;
+	}
+
+fieldset legend {
+	background:rgb(243, 211, 105);
+	padding: 10px;
+	font-weight: bold;
+	}
+a
+{
+	font-weight:bold;
+}
+.msg1
+{
+	background-color:red;
+}
+.class2
+{
+	font-weight:bold;
+}
+.container
+{
+    display:flex;
+    flex-wrap:wrap;
+}
+@media only screen and (max-width:480px)
+{
+    .container {
+		flex-direction:row;
+		flex-wrap: wrap;
+	}
+	.header, .main, .nav, .aside, .footer {
+		flex-basis: 100%;
+		padding:10px;
+	}
+    .header{
+        order: 1;
+    }
+    .nav
+    {
+        order: 2;
+    }
+	.aside{
+		order:3;
+	}
+    .main
+    {
+        order: 4;
+    }
+    .footer
+    {
+        order:5;
+    }
+}
+@media only screen and (min-width:485px)
+{
+    .container {
+		flex-direction:row;
+		flex-wrap: wrap;
+	}
+	.header, .main, .footer{
+		flex-basis: 100%;
+		padding:10px;
+	}
+    .nav {
+		flex-basis: 50%;
+		padding:10px;
+	}
+    .aside
+    {
+        flex-basis: 50%;
+		padding:10px;
+    }
+    .header{
+        order: 1;
+    }
+    .nav,.aside
+    {
+        order: 2;
+    }
+    .main
+    {
+        order: 3;
+    }
+    .footer
+    {
+        order:4;
+    }
+}
+
+@media all and (min-width: 800px){
+	.container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.header, .footer {
+		flex-basis: 100%;
+		padding:10px;
+	}
+	.nav, .aside {
+		flex-basis: 20%;
+		padding:10px;
+	}
+	.main {
+		flex-basis: 50%;
+		padding:10px;
+	}
+	.header{
+		order: 1;
+	}
+	.nav {
+		order: 2;
+	}
+	.main,.aside,.footer {
+		order: 3;
+	}
+}
